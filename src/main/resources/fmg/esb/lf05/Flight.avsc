@@ -1,0 +1,13 @@
+{
+ "namespace": "fmg.esb.lf05",
+ "type": "record",
+ "name": "Flight",
+ "fields": [
+			{"name": "FLA", "type":  "string"},
+			{"name": "KKN", "type":  ["null", "long"], "default": null},
+			{"name": "KNR", "type":  "long"},
+			{"name": "LSK", "type":  "string"},
+			{"name": "SAA", "type":  "string"},
+			{"name": "STT", "type":  {  "type": "long",  "logicalType": "timestamp-micros"}}
+ ]
+}

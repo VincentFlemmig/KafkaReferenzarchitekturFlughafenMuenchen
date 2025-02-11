@@ -1,0 +1,17 @@
+# Required connection configs for Kafka producer, consumer, and admin
+bootstrap.servers=pkc-921jm.us-east-2.aws.confluent.cloud:9092
+security.protocol=SASL_SSL
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='EWJCRU6TSWZDPZ77' password='W1g9WxLNPplLBnVY93JIYlOTX+fWbbz18cpgtT6HfKGCLWrt8cfinM7/5zJFbZSA';
+sasl.mechanism=PLAIN											
+# Required for correctness in Apache Kafka clients prior to 2.6
+client.dns.lookup=use_all_dns_ips
+
+# Best practice for higher availability in Apache Kafka clients prior to 3.0
+session.timeout.ms=45000
+
+# Best practice for Kafka producer to prevent data loss
+acks=all
+
+schema.registry.url=https://psrc-gk071.us-east-2.aws.confluent.cloud
+basic.auth.credentials.source=USER_INFO
+basic.auth.user.info=UCBAPJN7PFR2F3SM:KLzqluPnk3MdHzI5lJLQhyDmXFwkQgPz5hAg63KDXJIIJOrHZhy6LrCho2ELVUHp

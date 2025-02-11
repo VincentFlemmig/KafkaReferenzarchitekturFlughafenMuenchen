@@ -1,0 +1,14 @@
+ {
+ "namespace": "fmg.esb.lf05",
+ "type": "record",
+ "name": "FlightUpdateOrder",
+ "fields": [
+			{"name": "FLA", "type":  ["null", "string"], "default": null},
+			{"name": "KKN", "type":  ["null", "long"], "default": null},
+			{"name": "KNR", "type":  ["null", "long"], "default": null},
+			{"name": "LSK", "type":  ["null", "string"], "default": null},
+			{"name": "SAA", "type":  ["null", "string"], "default": null},
+			{"name": "STT", "type":  ["null", {  "type": "long",  "logicalType": "timestamp-micros"}], "default": null}
+ ]
+}
+ 
