@@ -54,9 +54,10 @@ Liest aus einer Tabelle die einem Flugzeug den Hin- und-Rückflug enthält, eine
 1. Topics anlgen
 2. ksqlDB Befehle ausführen
 3. API-Keys für Schema-Registry Kafka-Cluster und ksqlDB vergeben und in properties.txt sowie CompleteFlight einfügen
-4. API-Keys an benötigten Stellen einfügen. Diese sind durch <> in den Services und properties.txt Datei gekennzeichnet.  
-5. mit ProduceFlightEvents Flüge erzeugen
-6. mit FlightUpdateEvents UpdateAufträge generieren
-7. ValidateFlugAuftrag Aufträge validieren lassen
-8. UpdateFlight die Aufträge mit den aktuellen Daten vereinigen lassen
-9. mit ksqlDB eine KKN raussuchen, die existiert und mit CompleteFlight abfragen
+4. API-Keys an benötigten Stellen einfügen. Diese sind durch <> in den Services und properties.txt Datei gekennzeichnet.
+5. Maven generate-recources ausführen um Klassen der Schemata zu erzeugen
+6. mit ProduceFlightEvents Flüge erzeugen
+7. mit FlightUpdateEvents UpdateAufträge generieren
+8. ValidateFlugAuftrag Aufträge validieren lassen
+9. UpdateFlight die Aufträge mit den aktuellen Daten vereinigen lassen
+10. mit ksqlDB eine KKN raussuchen, die existiert und mit CompleteFlight abfragen
